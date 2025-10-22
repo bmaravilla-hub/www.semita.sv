@@ -1,0 +1,28 @@
+SENSOR ULTRASÓNICO:
+- VCC  → 5V Arduino
+- GND  → GND Arduino  
+- TRIG → Pin 9
+- ECHO → Pin 10
+
+L293D (Controlador Motor):
+- Pines 1,8,9,16 → 5V
+- Pines 4,5,12,13 → GND
+- Pin 16 → 5V (lógica)
+- Pin 8 → 9V (alimentación motores)
+
+MOTOR DC:
+- Terminal 1 → L293D Pin 3
+- Terminal 2 → L293D Pin 6
+
+ARDUINO → L293D:
+- Pin 5 → L293D Pin 2 (IN1)
+- Pin 6 → L293D Pin 7 (IN2) 
+- Pin 3 → L293D Pin 1 (ENABLE1)
+
+BOTÓN:
+- Un terminal → Pin 2 Arduino
+- Otro terminal → GND
+
+BATERÍA 9V:
+- Positivo → L293D Pin 8
+- Negativo → GND (compartido)
